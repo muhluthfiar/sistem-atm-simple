@@ -88,7 +88,7 @@ def main():
                     success = True
 
                     def dequeueAuto():
-                        time.sleep(40) #bisa diubah tergantung berapa lama
+                        time.sleep(120) #bisa diubah tergantung berapa lama
                         user['antrian_transfer'].dequeue()
 
                     while(success):
