@@ -27,15 +27,11 @@ class Queue:
     def enqueue(self,item):
         if self.isFull() == False:
             self.queue.insert(0, item)
-        else:
-            print("Queue is full, please dequeue it first")
 
     #takes an item in the front of the queue
     def dequeue(self):
         if self.isEmpty() == False:
             self.queue.pop()
-        else:
-            print("Queue is Empty, please enqueue it first")
 
     def display(self):
         print(self.queue)
